@@ -1,0 +1,87 @@
+.mainAbout{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 15%;
+}
+
+.info p{
+    color: white;
+}
+.profile{
+    height: 500px;
+    width: 500px;
+    border-radius: 50%;
+}
+.intro{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.docs{
+    display: flex;
+    justify-content: center;
+
+}
+.docs a{
+    text-decoration: none;
+    color: coral;
+}
+
+.docs a:hover{
+    text-decoration: none;
+    color: white;
+}
+.docs button{
+    margin: 5px;
+    width: 150px;
+    height: 50px;
+    border-radius: 2rem;
+    cursor: pointer;
+    border: 2px solid;
+}
+
+.cvBtn{
+    background: oldlace;
+}
+
+.info{
+    background: coral;
+    color: white;
+}
+.cvBtn:hover{
+    background: coral;
+    color: white;
+    transition: background-color 0.3s;
+}
+
+.social{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.github{
+    height: 20px;
+}
+.linkedIn{
+    width: 20px;
+}
+
+@media only screen and (max-width: 1040px) {
+    .mainAbout{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        top: 40px;
+    }
+
+    .profile{
+        width: 50%;
+        height: 50%;
+    }
+
+
+
+}

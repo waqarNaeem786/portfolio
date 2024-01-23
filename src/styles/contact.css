@@ -1,0 +1,41 @@
+.mainContact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    top: 177px;
+}
+
+.contact {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1%;
+    border: 2px solid coral; /* Adjusted border properties */
+    border-radius: 2rem;
+}
+
+.contact a {
+    text-decoration: none;
+    color: coral;
+    font-size: 150%;
+    margin: 0 10px; /* Adjusted margin to create space around the links */
+}
+
+.contact img {
+    width: 20px;
+    height: 20px;
+}
+
+@media screen and (max-width: 400px) {
+    .contact {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1%;
+        border: 2px solid coral;
+        border-radius: 2rem;
+        flex-direction: column;
+    }
+}
