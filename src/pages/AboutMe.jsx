@@ -14,7 +14,7 @@ function AboutMe() {
         <meta property="og:title" content="About WN" />
         <meta property="og:description" content="Discover WN's journey in software development, security research, and IC design entrepreneurship." />
         <meta property="og:image" content="/path-to-profile-image.png" />
-        <meta property="og:url" content="https://your-portfolio-site.com/about" />
+        <meta property="og:url" content="https://fire-app-34df0.web.app/about" />
       </head>
 
       <Header />

@@ -20,7 +20,7 @@ function Blogs() {
         <meta property="og:title" content="WN Blogs" />
         <meta property="og:description" content="Thesis-based articles and insights from WN." />
         <meta property="og:image" content="/path-to-blog-thumbnail.png" />
-        <meta property="og:url" content="https://your-portfolio-site.com/blogs" />
+        <meta property="og:url" content="https://fire-app-34df0.web.app/blogs" />
       </head>
 
       <Header />
