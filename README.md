@@ -40,9 +40,9 @@ I aim to:
 - Market SaaS web applications with no budget and maximum creativity
 
 ## 📬 Get in Touch
-- **LinkedIn:** [Your LinkedIn Profile](https://www.linkedin.com/in/waqar-naeem-b6a91a194/)
+- **LinkedIn:** [LinkedIn Profile](https://www.linkedin.com/in/waqar-naeem-b6a91a194/)
 - **Email:** neutrone04@gmail.com
-- **Portfolio Website:** [Your Website](https://fire-app-34df0.web.app/)
+- **Portfolio Website:** [Website](https://fire-app-34df0.web.app/)
 
 Thank you for visiting my portfolio repo! Feel free to explore, contribute, or reach out if you’d like to collaborate. 🚀
 
