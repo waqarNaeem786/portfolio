@@ -1,0 +1,15 @@
+.articleHeader span{
+    font-size: 1rem;
+}
+
+.articleHeader:hover{
+    cursor: pointer;
+}
+
+.Blogs a{
+    color: azure;
+    background-color: black;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    font-size: medium;
+}

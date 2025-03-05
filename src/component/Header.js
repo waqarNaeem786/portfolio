@@ -1,47 +1,50 @@
 import React from "react";
-import image from "../assets/profile.png"
-import "../styles/header.css"
-import {GrLinkedin} from "react-icons/gr";
-import {FaGithub} from "react-icons/fa";
+import { useNavigate } from "react-router-dom";
+import image from "../assets/profile.jpeg";
+import "../styles/header.css";
 
-export default function Header (){
-    return(
-            <div className={"mainAbout"}>
-                <img className={"profile"} src={image}/>
-                <div>
+export default function Header() {
+    const navigate = useNavigate();
 
-                    <div className={"intro"}>
-                        <h3> Hi, I'm</h3>
-                        <h1>Waqar Naeem</h1>
-                        <h2>Full Stack Developer</h2>
-                    </div>
+    const goToHome = () => {
+        navigate('/');
+    };
 
-                    <div className={"docs"}>
-                        <button className={"cvBtn"}>
-                        <a href="https://europa.eu/europass/eportfolio/api/eprofile/shared-profile/waqar-naeem/150280b4-c95c-4456-a50a-9e681f32f8b8?view=html   ">
-                            Download CV
-                        </a>
-                        </button>
-                        <button className={"info"}>
-                            <a href={'https://www.linkedin.com/in/waqar-naeem-b6a91a194/'}>
-                                <p>
-                                    Contact Info
+    return (
+        <div className={"mainAbout"}>
+            <div className="all">
 
-                                </p>
-                            </a>
-                        </button>
-                    </div>
-
-                    <div className={"social"}>
-
-                        <GrLinkedin size={20}/>
-                        <FaGithub size={20}/>
-
-                    </div>
-
+                {/*image and header*/}
+                <div className={"intro"} onClick={goToHome} style={{ cursor: 'pointer' }}>
+                    <img className={"profile"} src={image} alt="Profile of WN - Software Developer and Security Researcher" />
+                    <h2>WN</h2>
+                    {/* <p>Software Developer/Security Researcher freelancer</p> */}
                 </div>
 
+                {/*image and header*/}
+                <div className={"navBar"}>
+                    <a href="/projects">
+                        /projects
+                    </a>
+                    <a href="/blogs">
+                        /Writings
+                    </a>
+                    <a href="/about">
+                        /About
+                    </a>
+                </div>
             </div>
-
-    )
+        </div>
+    );
 }
+
+// SEO Meta Tags (Add these in the head section of your HTML or in a layout component)
+/*
+<meta name="description" content="Portfolio of WN - Software Developer, Security Researcher, and Freelancer. Explore projects, writings, and more." />
+<meta name="keywords" content="Software Developer, Security Researcher, Freelance Developer, WN Portfolio" />
+<meta name="author" content="WN" />
+<meta property="og:title" content="WN Portfolio" />
+<meta property="og:description" content="Explore the projects, writings, and expertise of WN - a Software Developer and Security Researcher." />
+<meta property="og:image" content="/path-to-profile-image.png" />
+<meta property="og:url" content="https://your-portfolio-site.com" />
+*/

@@ -1,72 +1,75 @@
-.mainAbout{
-    display: flex;
-    justify-content: space-evenly;
-    margin-top: 15%;
+p{
+    margin: auto;
+    color: gray
 }
 
-.info p{
-    color: white;
+h2{
+    margin: auto;
+}
+span{
+    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace ;
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+    color: rgb(51 65 85);
+}
+a{
+    color: black;
+    padding: 0.5rem;
+    text-decoration: none;
+    font-family:  sans-serif;
+    font-size: large;
+    transition: color 0.3s ease, transform 0.3s ease;
+    
+    /* font-weight: bold; */
+}
+.aboutMe{
+    color: azure;
+    background-color: black;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    font-size: medium;  
+}
+.aboutMe:hover{
+    color: azure;
+    background-color:#888aae;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    font-size: medium;  
+}
+
+
+a:hover{
+    cursor: pointer;
+    color: #888aae; /* Tomato color on hover */
+    transform: translateX(10px); /* Moves text to the right */
+}
+ h3{
+    color: #a5a0a0;
+ }
+
+
+.all{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 4rem;
+    padding-bottom: 3rem;
+
+}
+
+
+.intro{
+    /* padding: 20px; */
+    display: flex;
+    flex-direction: row;
 }
 .profile{
-    height: 500px;
-    width: 500px;
+    max-height: 64px;
+    max-width: 64px;
     border-radius: 50%;
-}
-.intro{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    margin-right: 2.5px;
 }
 
-.docs{
-    display: flex;
-    justify-content: center;
-
-}
-.docs a{
-    text-decoration: none;
-    color: coral;
-}
-
-.docs a:hover{
-    text-decoration: none;
-    color: white;
-}
-.docs button{
-    margin: 5px;
-    width: 150px;
-    height: 50px;
-    border-radius: 2rem;
-    cursor: pointer;
-    border: 2px solid;
-}
-
-.cvBtn{
-    background: oldlace;
-}
-
-.info{
-    background: coral;
-    color: white;
-}
-.cvBtn:hover{
-    background: coral;
-    color: white;
-    transition: background-color 0.3s;
-}
-
-.social{
-    display: flex;
-    justify-content: space-evenly;
-}
-
-.github{
-    height: 20px;
-}
-.linkedIn{
-    width: 20px;
-}
 
 @media only screen and (max-width: 1040px) {
     .mainAbout{

@@ -1,57 +1,44 @@
-.p{
-    position: relative;
-    top: 90px;
-}
-.mainProject{
+.card {
+    background: #fff;
+    border-radius: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    max-width: 15rem;
+    margin-bottom: 2rem;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  .projectImagesForHome {
+    width: 100%;
+    height: 10rem;
+    object-fit: cover;
+  }
+  
+  .card-content {
+    padding: 1rem;
+    text-align: left;
+  }
+  
+  .card-content h2 {
+    color: rgb(51, 65, 85);
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .card-content p {
+    color: rgb(100, 116, 139);
+    font-size: 0.9rem;
+    margin: 0;
+  }
+
+.allCards{
     display: flex;
-    flex-direction: column;
-    align-items: center;
-
-}
-
-.allcards{
-    display: flex;
-    justify-content: space-around;
-    margin-top: 5%;
-}
-
-.projectCards{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border: coral solid;
-    border-radius: 2rem;
-    padding: 2%;
-}
-
-.projectCards button{
-    width: 150px;
-    height: 50px;
-    border-radius: 2rem;
-    cursor: pointer;
-    border: 2px solid;
-    background: coral;
-    color: white;
-}
-
-@media screen and (max-width: 400px){
-    .mainProject {
-        display: flex;
-        flex-direction: column;
-
-    }
-    .allcards {
-        display: flex;
-        justify-content: space-around;
-        margin-top: 5%;
-        flex-direction: column;
-
-    }
-    .projectCards{
-        margin: 2%;
-    }
-    .projectCards img{
-        width: 80%;
-    }
-
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
 }

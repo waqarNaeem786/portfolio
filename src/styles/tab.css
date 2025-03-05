@@ -1,91 +1,32 @@
-
-.container {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding: 10px;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    background-color: oldlace;
-}
-
-
-.container a {
-    text-decoration: none;
-    color: coral;
-    font-size: 150%;
-}
-
-.bar-icon, .times-icon{
-    display: none;
-}
-
-
-.anchor a {
-    text-decoration: none;
-    color: coral;
-    margin: 0 20px;
-    font-size: 150%;
-    transition: 0.3s;
-}
-
-.anchor a:hover {
-    text-decoration: underline;
-    color: wheat;
-}
-
-
-@media screen and (max-width: 300px) {
-    .anchor.active{
-        top: 75%;
-        left: 35%;
-        transition: 0.3s;
-    }
-    .anchor a{
-        font-size: 100%;
-    }
-}
-
-@media screen and (max-width: 1040px){
-
-.container{
+.text_val{
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    position: fixed;
-
+    width: fit-content;
+    font-size: 18px;
+    
 }
-    .anchor{
-        display: flex;
-        flex-direction: column;
-        position: absolute;
-        left: 65%;
-        top: -120%;
-        transition: 0.3s;
-    }
-.container h1{
-    font-size: 100%;
+h4{
+    margin: 0;
 }
-    .anchor.active{
-        display: flex;
-        top: 50%;
-        transition: 0.3s;
-    }
-
-    .anchor a{
-        display: flex;
-        font-size: 110%;
-    }
-
-    .bar-icon, .times-icon {
-        display: block;
-        position: absolute;
-        top: 32%;
-        left: 87%;
-    }
-
-
-
+.tab{
+    margin-top: 2%;
+    display: flex;
+    justify-content: center;
 }
 
+.tab_icons{
+    margin-top: 10px;
+    display: flex;
+    /* flex-direction: row; */
+    /* padding: 10px; */
+}
+
+.tab_icons a{
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+p{
+    padding: 10px;
+}
